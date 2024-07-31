@@ -1,0 +1,15 @@
+create table if not exists ds_plotting_function(
+statsmodel_id Integer not null,
+formula varchar(255) null,
+health_check char null,
+full_data_identifier Integer null,
+summary_grid varchar(255) null,
+linear_regression_result varchar(255) null,
+read_csv_code Integer null,
+model_assumption_code Integer null,
+result_summary varchar(255) null,
+data_aggregation_code Integer null,
+data_to_import varchar(255) null,
+regression_model varchar(255) null,
+evaluation_model varchar(255) null,
+constraint ds_plotting_function_pk primary key(statsmodel_id));
